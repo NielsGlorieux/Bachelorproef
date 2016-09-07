@@ -196,7 +196,7 @@
                 function TestMap(position) {
                     var latitude = position.coords.latitude;
                     var longitude = position.coords.longitude;  
-                    alert("Your coordinates are " + position.coords.latitude + ", " + position.coords.longitude);
+                 
                     var div = document.getElementById('divID');
                     div.innerHTML = "Your coordinates are " + position.coords.latitude + ", " + position.coords.longitude;
                 }
@@ -249,9 +249,9 @@
         }
         function orientation(event){
         document.getElementById("magnetometer").innerHTML = "Magnetometer: "
-            + event.alpha + ", "
-            + event.beta + ", "
-            + event.gamma;
+            + Math.ceil(event.alpha) + ", "
+            + Math.ceil(event.beta) + ", "
+            + Math.ceil(event.gamma);
         }
         function go(){
         if(window.DeviceMotionEvent){
