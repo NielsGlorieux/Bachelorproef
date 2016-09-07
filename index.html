@@ -18,8 +18,6 @@
         <!-- CSS, Normalize First, minify for production -->
         <link href="less/fore.css" rel="stylesheet">
         
-        <!-- Import web fonts using the link tag instead of CSS @import -->
-        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
         
         <!-- Icons from http://fontawesome.io/ -->
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -64,13 +62,18 @@
         
     </head>
 
-    <body onload="go();">
+    <body onload="start();">
         
    
+        <script>
+              
+            function start(){
+                go();
+                TestGeo();
+            }  
+        </script>
         
-        
-        
-        
+    
         
         
         
