@@ -243,9 +243,9 @@
     <script type="text/javascript">
         function motion(event){
         document.getElementById("accelerometer").innerHTML = "Accelerometer: "
-            + event.accelerationIncludingGravity.x + ", "
-            + event.accelerationIncludingGravity.y + ", "
-            + event.accelerationIncludingGravity.z;
+            + Math.ceil(event.accelerationIncludingGravity.x) + ", "
+            + Math.ceil(event.accelerationIncludingGravity.y) + ", "
+            + Math.ceil(event.accelerationIncludingGravity.z);
         }
         function orientation(event){
         document.getElementById("magnetometer").innerHTML = "Magnetometer: "
