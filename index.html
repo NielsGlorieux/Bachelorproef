@@ -169,6 +169,7 @@
                         <div class="cta-container cf">
                             <p>Geolocation</p>
                             <a class="btn" href="#"> </a>
+                            <b><div id="divID"></div></b>
                         </div>
                      </section>
                     
@@ -192,6 +193,8 @@
                     var latitude = position.coords.latitude;
                     var longitude = position.coords.longitude;  
                     alert("Your coordinates are " + position.coords.latitude + ", " + position.coords.longitude);
+                    var div = document.getElementById('divID');
+                    div.innerHTML = "Your coordinates are " + position.coords.latitude + ", " + position.coords.longitude;
                 }
                 
                 function error() {
